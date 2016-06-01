@@ -1,0 +1,42 @@
+<div class="well">
+   <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+         <div class="form-group">
+            <input type="text" ng-model="product.id" class="form-control" placeholder="Mobile Id">
+         </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+         <div class="form-group">
+               <input type="text" ng-model="product.deviceName" class="form-control" placeholder="Handset Name">
+         </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+         <div class="form-group">
+               <input type="text" ng-model="product.model" class="form-control" placeholder="Model">
+         </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+         <div class="form-group">
+               <input type="text" ng-model="product.comment" class="form-control" placeholder="Comments">
+         </div>
+      </div>
+   </div>
+</div>
+<table class="table table-striped">
+   <thead>
+      <tr>
+         <th>Mobile Id</th>
+         <th>Handset Name</th>
+         <th>Model</th>
+         <th>Commments</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr ng-repeat="product in products | filter:product:strict">
+         <td>{{product.id}}</td>
+         <td>{{product.deviceName}}</td>
+         <td>{{product.model}}</td>
+         <td>{{product.comment}}</td>
+      </tr>
+   </tbody>
+</table>

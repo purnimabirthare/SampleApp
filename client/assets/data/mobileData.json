@@ -1,0 +1,35 @@
+[{
+		"id": 101,
+		"deviceName": "Samsung Galaxy J7",
+		"model": "Samsung",
+		"image": "./images/samsung-galaxy-j7.jpg",
+		"comment": "Comment For Samsung"
+	},
+	{
+		"id": 102,
+		"deviceName": "Lenovo Vibe K5 Plus",
+		"model": "Lenovo",
+		"image": "./images/lenovo-k5.jpg",
+		"comment": "Comment For Lenovo"
+	},
+	{
+		"id": 103,
+		"deviceName": "Motorola Moto X Play",
+		"model": "Motorola",
+		"image": "./images/moto-x-play.jpg",
+		"comment": "Comment For Motorola"
+	},
+	{
+		"id": 104,
+		"deviceName": "Micromax Canvas 5",
+		"model": "Micromax",
+		"image": "./images/micromax_canvas 5.jpg",
+		"comment": "Comment For Micromax"
+	},
+	{
+		"id": 105,
+		"deviceName": "Xiaomi Redmi Note 3",
+		"model": "Xiaomi",
+		"image": "./images/xiaomi-redmi-note-3.jpg",
+		"comment": "Comment For Xiaomi"
+}]

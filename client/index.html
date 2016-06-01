@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="app/styles/bootstrap.css" rel="stylesheet">
+    <link href="app/styles/style.css" rel="stylesheet">
+    <link href="app/styles/media-query.css" rel="stylesheet">
+    <link href="app/styles/main.css" rel="stylesheet">
+    <link href="app/styles/app.css" rel="stylesheet">
+  </head>
+  <body ng-app="sampleAppApp">
+     <header>
+        <data-ng-include src="'app/views/header.html'"></data-ng-include>
+    </header>
+    <section>
+        <div ui-view=""></div>
+    </section>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="app/app.js"></script>
+    <script src="app/controller/gallery/gallery.controller.js"></script>
+    <script src="app/controller/contact/contact.controller.js"></script>
+    <script src="app/service/gallery/galleryService.service.js"></script>
+    <script src="app/directive/gallery/galleryDirective.directive.js"></script>
+    <!-- endbuild -->
+   
+  </body>
+</html>
